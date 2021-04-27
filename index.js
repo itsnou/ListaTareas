@@ -21,6 +21,7 @@ function buildToDo(todo, index) {
     toDoText.setAttribute("id", index);
     if(todo.complete === true){
       toDoText.setAttribute('class','completeText');
+      toDoShell.classList.add('complete');
       
     };
     toDoShell.appendChild(toDoText);
